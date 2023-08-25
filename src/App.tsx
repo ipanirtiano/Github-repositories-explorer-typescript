@@ -68,7 +68,7 @@ function App() {
 
           {/* Results Users by Query */}
           {isLoading ? (
-            <div className="flex justify-center w-full h-full items-center">
+            <div className="flex justify-center w-full h-full items-start pt-[20px]">
               <svg
                 aria-hidden="true"
                 className="w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"

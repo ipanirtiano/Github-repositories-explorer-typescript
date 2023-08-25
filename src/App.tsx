@@ -3,12 +3,13 @@ import ListUser from "./components/ListUsers";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getUsers } from "./utils/UserSlice";
+import { AppDispatch } from "./store/store";
 
 function App() {
   // destruct initialState from reducer
   const { users, isLoading } = useSelector((state: any) => state.users);
   // set useDispatch
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   // state Accordion
   const [selected, setSelected] = useState(null);
   // state Query

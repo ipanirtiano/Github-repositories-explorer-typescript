@@ -11,7 +11,7 @@ const initialState = {
 };
 
 // create action
-export const getUsers = createAsyncThunk("get_users", async (query) => {
+export const getUsers = createAsyncThunk("get_users", async (query: string) => {
   try {
     const response = await axios.get(
       `https://api.github.com/search/users?q=${query}&since=1&per_page=5`
@@ -27,7 +27,7 @@ export const userSlice = createSlice({
   name: "users",
   initialState,
   reducers: {
-    reset: (state) => initialState,
+    reset: () => initialState,
   },
   // extra reducers action
   extraReducers: (builder) => {

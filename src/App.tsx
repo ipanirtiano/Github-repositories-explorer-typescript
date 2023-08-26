@@ -35,9 +35,9 @@ function App() {
   return (
     <>
       <div className="w-full bg-slate-200 flex items-center justify-center">
-        <div className="flex flex-col w-full md:w-[800px] h-screen overflow-auto bg-white justify-start items-start px-4 md:px-16 md:pt-[30px] pt-[30px] gap-2">
+        <div className="flex flex-col w-full md:w-[800px] h-screen overflow-auto bg-white justify-start items-start px-4 md:px-16 md:pt-[30px] py-[30px] gap-2">
           <p className="text-xl md:text-2xl font-semibold mb-2">
-            GitHub Repositories Exploler
+            GitHub Repositories Explorer
           </p>
           <form onSubmit={handleSubmit} className="w-full space-y-2">
             <div className="relative">

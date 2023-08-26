@@ -1,27 +1,30 @@
-# React + TypeScript + Vite
+# GutHub Repositories Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React application which integrates with github.com API and allows user to search user github by Query input form.
+The app will display 5 users with a similar Query input. when each users clicked will display repositories from selected users.
 
-Currently, two official plugins are available:
+## Features Application
+- Searched user github for 5 results
+- Display repositories each user
+- Responsive Design with mobile design first
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TECH & LIBRARY
+This application project is built using tech as below :
+- [React.js] React.js is library javascript, React lets you build user interfaces out of individual pieces called components.
+- [TailwindCSS] TailwindCss is framwork CSS for styling this project
+- [Vite.js] Vite is a build tool that is used for building fast and optimized web applications
+- [AXIOS] Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the browser
+- [REDUX] React Redux is state management
+- [VS CODE] Text editor
 
-## Expanding the ESLint configuration
+## Instalation
+- Download this repositories from github.com
+- Find the clone URL
+- Open Gitbash or Terminal
+- Type git clone, and then paste the URL you copied earlier. (git clone https://github.com/ipanirtiano/Github-repositories-explorer.git)
+- Press enter to create your local clone
+- Open folder project to text editor
+- Open terminal direct to folder project and type npm install to donwload all dependencies
+- After all download complete type npm run dev to run the project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
